@@ -37,6 +37,58 @@ function injectModalContainer(){
 
 function initUI(){
     injectModalContainer();
+    injectLogin();
+}
+
+
+function injectLogin(){
+    document.body.innerHTML += `
+    <script src="../src/firebase/firebase-app.js"></script>
+    <script src="../src/firebase/firebase.js"></script>
+    <script src="../src/firebase/firebase-auth.js"></script>
+    <script src="../src/firebase/firebase-database.js"></script>
+    `
 }
 
 initUI();
+
+var userData
+
+firebase.auth().onAuthStateChanged((user) => {
+    if (user) {
+        console.log(firebase.auth().currentUser);
+        userData = user;
+        loginSuccess();
+        var user1 = userData.email.split("@")[0];
+    } else {
+
+    }
+});
+
+var provider1 = new firebase.auth.GoogleAuthProvider();
+
+var credential;
+
+function googleSignInPopup() {
+
+    var provider1 = new firebase.auth.GoogleAuthProvider();
+    console.log("here");
+    firebase.auth().signInWithPopup(provider1).then((result) => {
+        credential = result.credential;
+        console.log(credential[photoURL]);
+        console.log("suc");
+        var token = credential.accessToken;
+        var user = result.user;
+        console.log("loggedin");
+    }).catch((error) => {
+        //var errorCode = error.code;
+        //var errorMessage = error.message;
+        //var email = error.email;
+        //var credential = error.credential;
+    });
+}
+
+
+function loginSuccess(){
+    d("loginOverlay").style.display = "none";
+}
