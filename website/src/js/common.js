@@ -52,18 +52,9 @@ function injectModalContainer(){
 
 function initUI(){
     injectModalContainer();
-    injectLogin();
 }
 
 
-function injectLogin(){
-    document.body.innerHTML += `
-    <script src="../src/firebase/firebase-app.js"></script>
-    <script src="../src/firebase/firebase.js"></script>
-    <script src="../src/firebase/firebase-auth.js"></script>
-    <script src="../src/firebase/firebase-database.js"></script>
-    `
-}
 
 
 
