@@ -1,0 +1,38 @@
+.main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.left, .right, .modelViewer{
+    height: 100vh;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    border: 1px solid lightgrey;
+}
+
+body {
+    background-color: white;}
+
+
+    .info{
+        position: absolute;
+        bottom: 10px;
+        width: 40vw;
+        min-height: 20vh;
+        max-height: 20vh;
+        overflow: scroll;
+        
+    }
+
+    .info p{
+        font-family:'Times New Roman', Times, serif;
+        text-align: justify;
+        font-size: 1.5vh;
+    }
+
+    .infoMobile{
+        border-radius: 0px 0px 100% 0px;
+        z-index: 1;
+    }
