@@ -8,11 +8,114 @@
     <title>Document</title>
     <link rel="stylesheet" href="../src/css/common.css">
     <link rel="stylesheet" href="../src/css/data.css">
+    <link rel="stylesheet" href="../src/css/mission.css">
 </head>
 
 <body>
+
+    
     <div class="baseLayer" id="baseLayer">
 
+        <div class="navMenu UI">
+            <div class="logo center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-satellite" width="40"
+                    height="40" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path
+                        d="M3.707 6.293l2.586 -2.586a1 1 0 0 1 1.414 0l5.586 5.586a1 1 0 0 1 0 1.414l-2.586 2.586a1 1 0 0 1 -1.414 0l-5.586 -5.586a1 1 0 0 1 0 -1.414z">
+                    </path>
+                    <path d="M6 10l-3 3l3 3l3 -3"></path>
+                    <path d="M10 6l3 -3l3 3l-3 3"></path>
+                    <line x1="12" y1="12" x2="13.5" y2="13.5"></line>
+                    <path d="M14.5 17a2.5 2.5 0 0 0 2.5 -2.5"></path>
+                    <path d="M15 21a6 6 0 0 0 6 -6"></path>
+                </svg>
+            </div>
+            <button>HOME</button>
+            <button>TIMELINE</button>
+            <button>RENDER</button>
+            <div class="userLogin">
+                <p id="userName">Guest User</p><img class = "userDP" id = "userDP" src="../texture/8k_sun.jpg" alt="" onclick="googleSignInPopup()">
+            </div>
+        </div>
+    
+        <div class="aboutRocket UIBlack">
+            <h1>
+                Demo Mission
+            </h1>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis perspiciatis, magnam, placeat corporis
+                dolorum quam excepturi soluta labore sapiente inventore provident illo qui. Vero recusandae veritatis fuga
+                cum beatae tempore!
+            </p>
+            <div class="imgCont">
+                <img src="https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/1972_july_landsat_1delta-rocket-erts-1.jpg"
+                    alt="">
+            </div>
+        </div>
+    
+        <div class="mainRender UIBlack" id="mainRenderPort" style="background-color: #2d2d2d33;">
+            <main class="page-content">
+                <div class="card">
+                    <div class="content">
+                      <h2 class="title">Nimbus</h2>
+                      <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
+                      <button class="btn" onclick="window.location.href = './mission.html'">Explore</button>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="content">
+                      <h2 class="title">Seasat</h2>
+                      <p class="copy">Plan your next beach trip with these fabulous destinations</p>
+                      <button class="btn" onclick="window.location.href = './mission.html'">Explore</button>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="content">
+                      <h2 class="title">aqua</h2>
+                      <p class="copy">It's the desert you've always dreamed of</p>
+                      <button class="btn" onclick="window.location.href = './mission.html'">Explore</button>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="content">
+                      <h2 class="title">Explore The Galaxy</h2>
+                      <p class="copy">Seriously, straight up, just blast off into outer space today</p>
+                      <button class="btn" onclick="window.location.href = './mission.html'">Explore</button>
+                    </div>
+                  </div> <div class="card">
+                    <div class="content">
+                      <h2 class="title">Mountain View</h2>
+                      <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
+                      <button class="btn" onclick="window.location.href = './mission.html'">Explore</button>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="content">
+                      <h2 class="title">To The Beach</h2>
+                      <p class="copy">Plan your next beach trip with these fabulous destinations</p>
+                      <button class="btn" onclick="window.location.href = './mission.html'">Explore</button>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="content">
+                      <h2 class="title">Desert Destinations</h2>
+                      <p class="copy">It's the desert you've always dreamed of</p>
+                      <button class="btn" onclick="window.location.href = './mission.html'">Explore</button>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="content">
+                      <h2 class="title">Explore The Galaxy</h2>
+                      <p class="copy">Seriously, straight up, just blast off into outer space today</p>
+                      <button class="btn" onclick="window.location.href = './mission.html'">Explore</button>
+                    </div>
+                  </div>
+              </main>
+        </div>
+
+        
     </div>
     <script src="../src/firebase/firebase-app.js"></script>
     <script src="../src/firebase/firebase.js"></script>
