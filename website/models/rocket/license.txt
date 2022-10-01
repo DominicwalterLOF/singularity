@@ -1,0 +1,11 @@
+Model Information:
+* title:	SpaceX Falcon Heavy(Low Poly)
+* source:	https://sketchfab.com/3d-models/spacex-falcon-heavylow-poly-0dc068a462e34258b3872085a7f592c8
+* author:	Antonio_Adams (https://sketchfab.com/AAdams3112)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "SpaceX Falcon Heavy(Low Poly)" (https://sketchfab.com/3d-models/spacex-falcon-heavylow-poly-0dc068a462e34258b3872085a7f592c8) by Antonio_Adams (https://sketchfab.com/AAdams3112) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

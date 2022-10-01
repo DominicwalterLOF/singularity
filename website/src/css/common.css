@@ -1,0 +1,111 @@
+@font-face {
+    font-family: spaceUI;
+    src: url(../../fonts/MBF_Space.ttf);
+}
+
+@font-face {
+    font-family: spaceUI2;
+    src: url(../../fonts/TechnoSpace.ttf);
+}
+
+@font-face {
+    font-family: spaceUI3;
+    src: url(../../fonts/SPACEEXPLORER.ttf);
+}
+
+@keyframes fade {
+    0% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: spaceUI;
+}
+
+*::-webkit-scrollbar{
+    display: none;
+}
+
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+}
+
+.UI {
+    position: fixed;
+    z-index: 5;
+    color: white;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+    background-color: rgba(173, 173, 173, 0.15);
+    backdrop-filter: blur(5px);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.UIDark {
+    position: fixed;
+    z-index: 5;
+    color: white;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+    background-color: rgba(87, 87, 87, 0.15);
+    backdrop-filter: blur(5px);
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .UIBlack {
+    position: fixed;
+    z-index: 5;
+    color: white;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+    background-color: rgba(26, 26, 26, 0.304);
+    backdrop-filter: blur(5px);
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+.UIS {
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+    background-color: rgba(103, 103, 103, 0.15);
+    backdrop-filter: blur(5px);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.tomsg {
+    min-height: 80px;
+    width: 100%;
+    top: 0px;
+    color: white;
+    padding: 15px;
+    margin: 10px 0px 0px 0px;
+    border-radius: 10px;
+    line-height: 20px;
+    animation: fade 5s linear;
+}
+
+.msgP {
+    font-family: 'Courier New', Courier, serif;
+}
+
+.bottomModalContainer {
+    display: block;
+    position: fixed;
+    bottom: 5vh;
+    z-index: 500;
+    width: 300px;
+    right: 5vh;
+    display: table-cell;
+}
