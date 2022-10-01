@@ -1,3 +1,18 @@
+initUI();
+
+const firebaseConfig = {
+    apiKey: "AIzaSyA9EgdNpAw2HaJdXz4OgQCp5phvglw5TRw",
+    authDomain: "number-ai-16d87.firebaseapp.com",
+    databaseURL: "https://number-ai-16d87-default-rtdb.firebaseio.com",
+    projectId: "number-ai-16d87",
+    storageBucket: "number-ai-16d87.appspot.com",
+    messagingSenderId: "769630344653",
+    appId: "1:769630344653:web:95b56f6b59f59d9db36084",
+    measurementId: "G-V8ZWLDHN27"
+  };
+
+
+firebase.initializeApp(firebaseConfig);
 var toastCount = 0;
 
 function d(e){
@@ -50,7 +65,7 @@ function injectLogin(){
     `
 }
 
-initUI();
+
 
 var userData
 
