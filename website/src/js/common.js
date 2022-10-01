@@ -66,6 +66,7 @@ firebase.auth().onAuthStateChanged((user) => {
         userData = user;
         loginSuccess();
         var user1 = userData.email.split("@")[0];
+        showToast("Logged In Successfully", 5);
     } else {
 
     }
@@ -98,5 +99,6 @@ function googleSignInPopup() {
 
 
 function loginSuccess(){
-    d("loginOverlay").style.display = "none";
+    d("userName").innerHTML = userData.displayName;
+    d("userDP").src = userData.photoURL;
 }
