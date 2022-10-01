@@ -109,3 +109,7 @@ body {
     right: 5vh;
     display: table-cell;
 }
+
+p{
+    font-family: 'Times New Roman', Times, serif;
+}

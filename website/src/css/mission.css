@@ -1,0 +1,42 @@
+.aboutRocket{
+    position: absolute;
+    top: calc(10vh + 50px);
+    right: 10px;
+    height: 70vh;
+    width: 20vw;
+    font-size: 0.7em;
+}
+
+.imgCont{
+    width:20vw;
+    display: flex;
+    justify-content: center;
+}
+
+img{
+ width: 80%;
+ height: 100%;
+ border-radius: 30px;
+}
+
+.navMenu{
+    margin: 25px;
+    width: calc(100vw - 50px);
+    height: 10vh;
+    display: flex;
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    margin: 20px;
+    left: 0px;
+    padding: 10px;
+    align-items: center;
+}
+
+button {
+    padding: 10px;
+    margin: 15px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    border: 1px solid #555555;
+    font-family: spaceUI;
+    
+}
