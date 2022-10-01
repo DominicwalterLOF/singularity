@@ -86,11 +86,13 @@ function googleSignInPopup() {
         var token = credential.accessToken;
         var user = result.user;
         console.log("loggedin");
+        showToast("Logged In Successfully", 5);
     }).catch((error) => {
         //var errorCode = error.code;
         //var errorMessage = error.message;
         //var email = error.email;
         //var credential = error.credential;
+        showToast(error.message, 5);
     });
 }
 
