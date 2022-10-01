@@ -40,3 +40,24 @@ button {
     font-family: spaceUI;
     
 }
+
+.mainRender{
+    background-color: black;
+    width: calc(80vw - 60px);
+    height: calc(90vh - 110px);
+    position: absolute;
+    top: calc(10vh + 50px);
+    left: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.background{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    background-color: #1d1d1d;
+    opacity: 0.8;
+    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #272727 10px ), repeating-linear-gradient( #00000055, #000000 );
+}

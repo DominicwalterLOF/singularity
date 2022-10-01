@@ -40,9 +40,9 @@ function init() {
     composer = new EffectComposer(renderer, renderTarget);
     composer.setSize(window.innerWidth, window.innerHeight);
     composer.addPass(new RenderPass(scene, camera));
-    document.body.appendChild(renderer.domElement);
+    document.getElementById("mainRenderPort").appendChild(renderer.domElement);
     loadRocket();
-    //controls = new OrbitControls(camera, renderer.domElement);
+    
     LaunchView();
     Bloom();
     screenShake = ScreenShake();
@@ -163,7 +163,9 @@ function clockTicks() {
     }
     
     screenShake.update(camera);
-    //controls.update();
+    if(!controlFlag){
+        controls.update();
+    }
     composer.render();
 }
 
@@ -183,6 +185,9 @@ sunLight.position.z = 6;
 sunLight.castShadow = true;
 
 
+var controlFlag = true;
+
+
 function launchRocket() {
     if (true && rocket.position.y < 65) {
         rocket.position.y += 0.02;
@@ -193,5 +198,10 @@ function launchRocket() {
         camera.rotation.z += 0.0001;
         scene.background.rotation += 0.0001;
         console.log(rocket.position.y);
+    }else{
+        if(controlFlag){
+            controlFlag = false;
+            controls = new OrbitControls(camera, renderer.domElement);
+        }
     }
 }
