@@ -55,9 +55,6 @@ function initUI(){
 }
 
 
-
-
-
 var userData
 
 firebase.auth().onAuthStateChanged((user) => {
@@ -82,7 +79,7 @@ function googleSignInPopup() {
     console.log("here");
     firebase.auth().signInWithPopup(provider1).then((result) => {
         credential = result.credential;
-        console.log(credential[photoURL]);
+        console.log(credential["photoURL"]);
         console.log("suc");
         var token = credential.accessToken;
         var user = result.user;
@@ -99,6 +96,6 @@ function googleSignInPopup() {
 
 
 function loginSuccess(){
-    d("userName").innerHTML = userData.displayName;
-    d("userDP").src = userData.photoURL;
+    d("userName").innerHTML = userData["displayName"];
+    d("userDP").src = userData["photoURL"];
 }

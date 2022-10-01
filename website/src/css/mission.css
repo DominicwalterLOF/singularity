@@ -75,3 +75,9 @@ button {
     width: 5vh;
     margin: 0px 20px 0px 20px;
 }
+
+.renderLog{
+    position: absolute;
+    z-index: 2;
+    color: black;
+}
