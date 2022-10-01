@@ -1,12 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Singularity</title>
+    <link rel="stylesheet" href="../src/css/common.css">
+    <link rel="stylesheet" href="../src/css/main.css">
 </head>
+
 <body>
-    Success
+    <div class="controlls">
+
+    </div>
+
+    <div class="OVERLAY"></div>
+    <div class="titleM side" id="side">
+        <input type="text" placeholder="Enter Text" class="editText" id="mainText">
+        <div class="holder side" id="titleHolder">
+            <h1>Singularity</h1>
+            <p class="UIS UISM">NASA Space Apps Challenge . Team Singularity . Nimbus to Now</p>
+        </div>
+    </div>
+    <div class="navPan UI" id="nav">
+        <div class="logo center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-satellite" width="40"
+                height="40" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path
+                    d="M3.707 6.293l2.586 -2.586a1 1 0 0 1 1.414 0l5.586 5.586a1 1 0 0 1 0 1.414l-2.586 2.586a1 1 0 0 1 -1.414 0l-5.586 -5.586a1 1 0 0 1 0 -1.414z">
+                </path>
+                <path d="M6 10l-3 3l3 3l3 -3"></path>
+                <path d="M10 6l3 -3l3 3l-3 3"></path>
+                <line x1="12" y1="12" x2="13.5" y2="13.5"></line>
+                <path d="M14.5 17a2.5 2.5 0 0 0 2.5 -2.5"></path>
+                <path d="M15 21a6 6 0 0 0 6 -6"></path>
+            </svg>
+        </div>
+        <button>HOME</button>
+        <button>TIMELINE</button>
+        <button>COMPARE</button>
+        <button>RENDER</button>
+        <button>ABOUT</button>
+    </div>
+    <div class="sidePan UI">
+       
+    </div>
+
+    <div class="footer UI" style="bottom: 10px; right: 10px;">
+        Team Singularity for NASA Space Apps Challenge 2022
+    </div>
+    <div class="title UIDark" id="mainTitle">
+        <div class="holder" id="titleHolder">
+            <h1>Singularity</h1>
+            <p class="UIS">NASA Space Apps Challenge . Team Singularity . Nimbus to Now</p>
+    <div class="menuBar UI center">
+        <button>
+            Get Started
+        </button>
+    </div>
+        </div>
+    </div>
 </body>
+<script src="../src/lib/three.js"></script>
+<script src="../src/lib/GLTFLoader.js"></script>
+<script src="../src/lib/mics.js"></script>
+<script src="../src/lib/EffectComposer.js"></script>
+<script src="../src/lib/RenderPass.js"></script>
+<script src="../src/lib/ShaderPass.js"></script>
+<script src="../src/lib/UnrealBloomPass.js"></script>
+<script src="../src/lib/BloomPass.js"></script>
+<script src="../src/js/common.js"></script>
+<script src="../src/js/main.js"></script>
+
 </html>
