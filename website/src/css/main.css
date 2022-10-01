@@ -142,3 +142,18 @@ canvas {
 .footer{
     font-size: 0.5em;
 }
+
+
+.clock {
+    position: absolute;
+    top: 10px;
+    left:10px;
+    color: #ffffff;
+    font-size: 1em;
+    font-family: Orbitron;
+    font-family: spaceUI3;
+    letter-spacing: 7px;
+   z-index: 20;
+
+
+}
