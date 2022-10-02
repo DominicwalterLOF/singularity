@@ -24,6 +24,7 @@ body {
   grid-gap: 1rem;
   padding: 1rem;
   max-width: 1024px;
+  height: 100%;
   margin: 0 auto;
   font-family: spaceUI;
   overflow: scroll;
@@ -170,6 +171,7 @@ body {
   .card:hover,
 .card:focus-within {
     align-items: center;
+    filter: none;
   }
   .card:hover:before,
 .card:focus-within:before {
@@ -206,4 +208,10 @@ body {
 
 .page-content{
     overflow-y: scroll;
+}
+
+#sideTV{
+    
+    border-radius: 10px;
+    overflow: hidden;
 }
