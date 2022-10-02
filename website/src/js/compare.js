@@ -4,7 +4,8 @@ flagArray = [false,false,false];
 
 
 if (window.location.href.includes("?")) {
-    removeOverlay(window.location.href);
+    flagArray = [true,true,true];
+    removeOverlay();
     var params = window.location.href.split("?")[1].split("&");
     d("rocket1").src = "../models/" + rocketArray[params[0]] + "/scene.gltf"
     d("rocket2").src = "../models/" + rocketArray[params[1]] + "/scene.gltf"
