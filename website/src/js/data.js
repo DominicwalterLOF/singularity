@@ -52,7 +52,7 @@ function init() {
     composer.addPass(new RenderPass(scene, camera));
     document.body.appendChild(renderer.domElement);
     Bloom();
-    var yellowlight = new THREE.DirectionalLight(0xffffff, 11)
+    var yellowlight = new THREE.DirectionalLight(0xffffff, 1)
     scene.add(yellowlight);
     var yellowLight = new THREE.AmbientLight(0xaaddff, 1)
     scene.add(yellowLight);

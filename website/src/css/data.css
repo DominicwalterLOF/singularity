@@ -215,3 +215,23 @@ body {
     border-radius: 10px;
     overflow: hidden;
 }
+
+iframe{
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.aboutRocket{
+  height: 80vh;
+  width: 30vw;
+}
+
+.mainRender{
+  width: calc(70vw - 50px);
+  height: calc(80vh);
+}
+
+.UIBlack{
+  border: 2px solid rgb(108, 108, 108);
+}
