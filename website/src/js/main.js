@@ -123,6 +123,7 @@ function importSat(){
         sat.position.set(4, 7, 2);
         scene.add(gltf.scene);
         composer.render();
+        showToast("Scroll down to Explore", 5)
         animateEarth();
     });
 }
@@ -175,6 +176,7 @@ function animateCamera(scrollY) {
             animateEarth();
             d("side").style.display = "none";
             d("nav").style.display = "none";
+            d("chooseOverlay").style.display = "none";
             d("mainTitle").style.display = "flex";
         }
         camera.position.y = -8 + 15 * percentScroll;
@@ -192,6 +194,7 @@ function animateCamera(scrollY) {
         d("side").style.display = "block";
         d("mainTitle").style.display = "none";
         d("nav").style.display = "block";
+        d("chooseOverlay").style.display = "block";
         if(upFlag){
             yAngle += 0.009;
         }
@@ -240,3 +243,5 @@ function showTime(){
 }
 
 showTime();
+
+showToast("Loading 3D Models", 5)

@@ -8,19 +8,89 @@
     <title>Singularity</title>
     <link rel="stylesheet" href="../src/css/common.css">
     <link rel="stylesheet" href="../src/css/main.css">
+
 </head>
 
 <body>
+
+
     <div class="controlls">
 
     </div>
 
     <div class="OVERLAY"></div>
     <div class="titleM side" id="side">
-        <input type="text" placeholder="Enter Text" class="editText" id="mainText">
         <div class="holder side" id="titleHolder">
             <h1>Singularity</h1>
             <p class="UIS UISM">NASA Space Apps Challenge . Team Singularity . Nimbus to Now</p>
+        </div>
+    </div>
+
+    <div class="chooseOverlay" id="chooseOverlay" style="display: none;">
+
+        <div class="mainRender UIBlack" id="mainRenderPort" style="z-index:333;background-color: #2d2d2d33;">
+            <main class="page-content">
+                <div class="card">
+                    <div class="content">
+                        <h3 class="title1">Nimbus</h3>
+                        <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you
+                            guessed
+                            it, the mountains</p>
+                        <button class="btn" onclick="window.location.href = './mission.html'">Explore</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <h3 class="title1">Seasat</h3>
+                        <p class="copy">Plan your next beach trip with these fabulous destinations</p>
+                        <button class="btn" onclick="window.location.href = './mission.html'">Explore</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <h3 class="title1">aqua</h3>
+                        <p class="copy">It's the desert you've always dreamed of</p>
+                        <button class="btn" onclick="window.location.href = './mission.html'">Explore</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <h3 class="title1">Explore The Galaxy</h3>
+                        <p class="copy">Seriously, straight up, just blast off into outer space today</p>
+                        <button class="btn" onclick="window.location.href = './mission.html'">Explore</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <h3 class="title1">Mountain View</h3>
+                        <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you
+                            guessed
+                            it, the mountains</p>
+                        <button class="btn" onclick="window.location.href = './mission.html'">Explore</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <h3 class="title1">To The Beach</h3>
+                        <p class="copy">Plan your next beach trip with these fabulous destinations</p>
+                        <button class="btn" onclick="window.location.href = './mission.html'">Explore</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <h3 class="title1">Desert Destinations</h3>
+                        <p class="copy">It's the desert you've always dreamed of</p>
+                        <button class="btn" onclick="window.location.href = './mission.html'">Explore</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <h3 class="title1">Explore The Galaxy</h3>
+                        <p class="copy">Seriously, straight up, just blast off into outer space today</p>
+                        <button class="btn" onclick="window.location.href = './mission.html'">Explore</button>
+                    </div>
+                </div>
+            </main>
         </div>
     </div>
     <div class="navPan UI" id="nav">
@@ -39,44 +109,47 @@
                 <path d="M15 21a6 6 0 0 0 6 -6"></path>
             </svg>
         </div>
-        <button>HOME</button>
-        <button>TIMELINE</button>
-        <button>COMPARE</button>
-        <button>RENDER</button>
-        <button>ABOUT</button>
+        <button onclick="window.location.href = './index.html'">HOME</button>
+        <button onclick="window.location.href = './timeline.html'">TIMELINE</button>
+        <button onclick="window.location.href = './compare.html'">COMPARE</button>
+        <button onclick="window.location.href = './data.html'">RENDER</button>
+        <button onclick="window.location.href = './mission.html'">ABOUT</button>
+        <div class="userLogin">
+            <p id="userName">Guest User</p><img class="userDP" id="userDP" src="../texture/8k_sun.jpg" alt=""
+                onclick="googleSignInPopup()">
+        </div>
     </div>
     <div class="sidePan UI">
-       
+
     </div>
 
-<div class="clock">
-    <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
-</div>
+    <div class="clock">
+        <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+    </div>
 
 
     <div class="footer UI" style="bottom: 10px; left: 10px;">
         Team Singularity for NASA Space Apps Challenge 2022
     </div>
 
-
-
-
     <div class="title UIDark" id="mainTitle">
-        <div class="holder" id="titleHolder">
-            <h1>Singularity</h1>
-            <p class="UIS">NASA Space Apps Challenge . Team Singularity . Nimbus to Now</p>
-    <div class="menuBar UI center">
-        <button>
-            Get Started
-        </button>
-    </div>
+        <div class="titleCard">
+            <div class="holder" id="titleHolder">
+                <h1 style="font-size: 10vh;">Singularity</h1>
+                <p class="UIS">NASA Space Apps Challenge . Team Singularity . Nimbus to Now</p>
+            </div>
+        </div>
+        <div class="menuBar UI center" style="bottom: 10vh; width: 30vw;">
+            <button onclick="googleSignInPopup()">
+                Login
+            </button>
         </div>
     </div>
 </body>
 <script src="../src/firebase/firebase-app.js"></script>
-    <script src="../src/firebase/firebase.js"></script>
-    <script src="../src/firebase/firebase-auth.js"></script>
-    <script src="../src/firebase/firebase-database.js"></script>
+<script src="../src/firebase/firebase.js"></script>
+<script src="../src/firebase/firebase-auth.js"></script>
+<script src="../src/firebase/firebase-database.js"></script>
 <script src="../src/lib/three.js"></script>
 <script src="../src/lib/GLTFLoader.js"></script>
 <script src="../src/lib/mics.js"></script>
