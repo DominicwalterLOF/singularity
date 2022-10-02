@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,25 +9,47 @@
     <link rel="stylesheet" href="../src/css/common.css">
     <link rel="stylesheet" href="../src/css/compare.css">
 </head>
+
 <body>
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-    
+    <div class="overlay" id="overlay">
+        <div class="left" style="flex-direction: column;">
+            <h1>Pick</h1>
+            <div class="cont" id="b1">
+
+            </div>
+        </div>
+        <div class="right" style="flex-direction: column;">
+            <h1>Pick</h1>
+            <div class="cont" id="b2">
+
+            </div>
+        </div>
+    </div>
     <div class="main">
         <div class="left">
-            <model-viewer class = "modelViewer" alt="" src="../models/observatory/scene.gltf" ar shadow-intensity="1" camera-controls touch-action="pan-y"></model-viewer>
+            <model-viewer class="modelViewer" id="rocket1" alt="" src="../models/observatory/scene.gltf" ar
+                shadow-intensity="1" camera-controls touch-action="pan-y"></model-viewer>
             <div class="info UIBlack">
-                <h2>Model 1</h2><hr>
+                <h2>Model 1</h2>
+                <hr>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo repudiandae officiis ipsa inventore pariatur, corrupti iusto. Quia, adipisci assumenda vel, suscipit, aliquam explicabo corporis dolores in magni nemo molestiae eum.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo repudiandae officiis ipsa inventore
+                    pariatur, corrupti iusto. Quia, adipisci assumenda vel, suscipit, aliquam explicabo corporis dolores
+                    in magni nemo molestiae eum.
                 </p>
-                </div>
+            </div>
         </div>
         <div class="right">
-            <model-viewer class = "modelViewer" alt="" src="../models/envisat/scene.gltf" ar shadow-intensity="1" camera-controls touch-action="pan-y"></model-viewer>
+            <model-viewer class="modelViewer" id="rocket2" alt="" src="../models/envisat/scene.gltf" ar
+                shadow-intensity="1" camera-controls touch-action="pan-y"></model-viewer>
             <div class="info UIBlack">
-                <h2>Env Sat</h2><hr>
+                <h2>Env Sat</h2>
+                <hr>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo repudiandae officiis ipsa inventore pariatur, corrupti iusto. Quia, adipisci assumenda vel, suscipit, aliquam explicabo corporis dolores in magni nemo molestiae eum.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo repudiandae officiis ipsa inventore
+                    pariatur, corrupti iusto. Quia, adipisci assumenda vel, suscipit, aliquam explicabo corporis dolores
+                    in magni nemo molestiae eum.
                 </p>
             </div>
         </div>
@@ -35,5 +58,8 @@
     <script src="../src/firebase/firebase.js"></script>
     <script src="../src/firebase/firebase-auth.js"></script>
     <script src="../src/firebase/firebase-database.js"></script>
+    <script src="../src/js/common.js"></script>
+    <script src="../src/js/compare.js"></script>
 </body>
+
 </html>

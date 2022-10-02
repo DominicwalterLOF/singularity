@@ -1,0 +1,11 @@
+Model Information:
+* title:	J-2S
+* source:	https://sketchfab.com/3d-models/j-2s-b579558252c4459fa624c8350443fbc0
+* author:	MartianDays (https://sketchfab.com/MartianDays)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "J-2S" (https://sketchfab.com/3d-models/j-2s-b579558252c4459fa624c8350443fbc0) by MartianDays (https://sketchfab.com/MartianDays) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

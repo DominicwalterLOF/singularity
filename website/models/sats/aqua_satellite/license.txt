@@ -1,0 +1,11 @@
+Model Information:
+* title:	Aqua satellite
+* source:	https://sketchfab.com/3d-models/aqua-satellite-wWmEeEeS71I2eX4PS281MUMK3B5
+* author:	NASA (https://sketchfab.com/NASA)
+
+Model License:
+* license type:	CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
+* requirements:	Author must be credited. No commercial use.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Aqua satellite" (https://sketchfab.com/3d-models/aqua-satellite-wWmEeEeS71I2eX4PS281MUMK3B5) by NASA (https://sketchfab.com/NASA) licensed under CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)

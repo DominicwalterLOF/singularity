@@ -1,0 +1,11 @@
+Model Information:
+* title:	Global Star
+* source:	https://sketchfab.com/3d-models/global-star-c8bee636c4ad4a87b2ce127249529b9a
+* author:	uperesito (https://sketchfab.com/uperesito)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Global Star" (https://sketchfab.com/3d-models/global-star-c8bee636c4ad4a87b2ce127249529b9a) by uperesito (https://sketchfab.com/uperesito) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
