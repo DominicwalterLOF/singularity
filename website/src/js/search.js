@@ -1,8 +1,17 @@
 async function getData(query){
        const response= await fetch("https://images-api.nasa.gov/search?q=" + query + "&media_type=image")
        const data= await response.json();
-       console.log(data);
        render(data);
+     }
+
+
+    async function getActualImage(collection){
+        const response = await fetch(collection)
+        const data= await response.json();
+        for(var i in data){
+            d("results").innerHTML += generateCard(data[i], ""); 
+            break
+        }
      }
 
 
@@ -13,8 +22,8 @@ function search() {
 
   function render(data){
     for(i in data["collection"]["items"]){
-        console.log(data["collection"]["items"][i]["href"])
-        d("results").innerHTML += generateCard(data["collection"]["items"][i]["href"], "")
+        d("results").innerHTML = "";
+        getActualImage(data["collection"]["items"][i]["href"])
     }
   }
 
